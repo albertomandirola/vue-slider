@@ -56,6 +56,10 @@ createApp({
                 this.currentImage--;
             }
         },
+        //FUNCTION THAT PERMIT BY A CLICK ON THUMB THE CHANGE OF THE IMG
+        changeImg(index){
+            this.currentImage = index;
+        },
     }
        
 }).mount('#app');
