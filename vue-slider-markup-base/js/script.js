@@ -60,6 +60,22 @@ createApp({
         changeImg(index){
             this.currentImage = index;
         },
+        // FUNCTION THAT CHANGE THE IMG
+        startAutoPlay(){
+            this.autoPlay = setInterval(() => {
+                this.nextImg();
+            }, 1000);
+        },
+        // FUNCTION THAT PAUSE THE AUTO PLAY
+        pauseAutoPlay(){
+            clearInterval(this.autoPlay);
+            this.autoPlay = null;
+        },
+        // FUINCTION THAT STOP AUTO PLAY AND SET THE IMG TO FIRST VALUE
+        stopAutoPlay(){
+            this.pauseAutoPlay();
+            this.currentImage = 0;
+        }
     }
        
 }).mount('#app');
