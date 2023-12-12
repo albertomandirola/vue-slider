@@ -44,6 +44,9 @@
     opacity: 0.5;
     cursor: pointer;
 }
+button{
+    cursor: pointer;
+}
 
 .thumb img {
     width: 100%;
